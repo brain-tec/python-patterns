@@ -90,12 +90,6 @@ Contributing
 ------------
 When an implementation is added or modified, please review the following guidelines:
 
-##### Output
-All files with example patterns have `### OUTPUT ###` section at the bottom 
-(migration to OUTPUT = """...""" is in progress).
-
-Run `append_output.sh` (e.g. `./append_output.sh borg.py`) to generate/update it.
-
 ##### Docstrings
 Add module level description in form of a docstring with links to corresponding references or other useful information.
 
@@ -104,16 +98,11 @@ Add "Examples in Python ecosystem" section if you know some. It shows how patter
 [facade.py](patterns/structural/facade.py) has a good example of detailed description,
 but sometimes the shorter one as in [template.py](patterns/behavioral/template.py) would suffice.
 
-In some cases class-level docstring with doctest would also help (see [adapter.py](patterns/structural/adapter.py))
-but readable OUTPUT section is much better.
-
-
 ##### Python 2 compatibility
 To see Python 2 compatible versions of some patterns please check-out the [legacy](https://github.com/faif/python-patterns/tree/legacy) tag.
 
 ##### Update README
 When everything else is done - update corresponding part of README.
-
 
 ##### Travis CI
 Please run `tox` or `tox -e ci37` before submitting a patch to be sure your changes will pass CI.
